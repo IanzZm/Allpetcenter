@@ -515,6 +515,7 @@ a {
   line-height: 1.75;
   display: -webkit-box;
   overflow: hidden;
+  line-clamp: 4;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
 }
