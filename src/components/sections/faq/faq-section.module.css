@@ -1,0 +1,39 @@
+.faqSection {
+  position: relative;
+  background: #fff8ef;
+}
+
+.faqContact {
+  border-radius: 1.25rem;
+  background: white;
+  padding: 2rem;
+  box-shadow: 0 18px 45px rgb(168 91 43 / 0.08);
+}
+
+.faqContact a {
+  margin-top: 1.5rem;
+  display: inline-flex;
+  border-radius: 999px;
+  background: var(--orange-soft);
+  padding: 0.85rem 1.1rem;
+  font-weight: 900;
+  color: var(--ink);
+}
+
+.faqItem {
+  border-radius: 0.85rem;
+  border: 1px solid var(--border);
+  background: white;
+  padding: 1.1rem 1.25rem;
+}
+
+.faqItem summary {
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.faqItem p {
+  margin-top: 0.8rem;
+  color: var(--muted);
+  line-height: 1.6;
+}

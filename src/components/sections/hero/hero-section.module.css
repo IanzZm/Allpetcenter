@@ -1,0 +1,122 @@
+.heroSection {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 78% 18%, rgb(255 196 111 / 0.65) 0 17%, transparent 18%),
+    linear-gradient(135deg, #9f5428 0%, #bd713a 48%, #8b431f 100%);
+}
+
+.heroSection::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, rgb(58 26 13 / 0.26) 0%, rgb(58 26 13 / 0.28) 34%, transparent 68%),
+    linear-gradient(180deg, rgb(58 26 13 / 0.12) 0%, transparent 38%);
+}
+
+.heroSection h1 {
+  text-shadow: 0 4px 22px rgb(58 26 13 / 0.34);
+}
+
+.heroSection h1 + p {
+  color: rgb(255 255 255 / 0.9);
+  text-shadow: 0 2px 12px rgb(58 26 13 / 0.28);
+}
+
+.heroPill,
+.heroTag {
+  display: inline-flex;
+  border-radius: 999px;
+  border: 1px solid rgb(255 255 255 / 0.28);
+  background: rgb(58 26 13 / 0.16);
+  color: #fff0d2;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.heroPill {
+  padding: 0.7rem 1rem;
+}
+
+.heroTag {
+  padding: 0.55rem 0.85rem;
+}
+
+.heroCta {
+  background: var(--orange-soft);
+  color: var(--ink);
+  box-shadow: var(--shadow-brand);
+}
+
+.heroGhost {
+  border: 1px solid rgb(255 255 255 / 0.26);
+  color: white;
+}
+
+.heroPhotoWrap {
+  position: relative;
+  max-width: 520px;
+  margin-inline: auto;
+}
+
+.heroBlob {
+  position: absolute;
+  inset: 7% 0 auto auto;
+  width: 86%;
+  aspect-ratio: 1;
+  border-radius: 42% 58% 49% 51% / 55% 42% 58% 45%;
+  background: var(--orange-soft);
+}
+
+.heroPhoto {
+  position: relative;
+  margin-left: auto;
+  width: min(86vw, 440px);
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-radius: 38% 62% 45% 55% / 44% 36% 64% 56%;
+  box-shadow: 0 28px 80px rgb(58 26 13 / 0.35);
+}
+
+.heroMiniCard {
+  position: absolute;
+  left: 0;
+  bottom: 8%;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  border-radius: 999px;
+  background: white;
+  padding: 0.65rem 1rem 0.65rem 0.65rem;
+  box-shadow: var(--shadow-brand);
+}
+
+.wave {
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+  left: 0;
+  z-index: 2;
+  height: 90px;
+  clip-path: ellipse(66% 72% at 50% 100%);
+}
+
+.waveWhite {
+  background: white;
+}
+
+@media (max-width: 767px) {
+  .heroPhotoWrap {
+    padding-bottom: 5rem;
+  }
+
+  .heroMiniCard {
+    bottom: 0;
+    left: 1rem;
+  }
+}

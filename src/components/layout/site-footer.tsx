@@ -1,9 +1,10 @@
 import Image from "next/image";
 import { contact } from "@/data/site-content";
+import styles from "./site-footer.module.css";
 
 export function SiteFooter() {
   return (
-    <footer className="footer-section">
+    <footer className={styles.footerSection}>
       <div className="mx-auto flex max-w-7xl flex-col justify-between gap-8 px-5 py-10 sm:px-8 md:flex-row md:items-center">
         <div>
           <div className="relative h-16 w-40 overflow-hidden rounded-md">

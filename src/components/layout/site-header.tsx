@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { contact, navLinks } from "@/data/site-content";
+import styles from "./site-header.module.css";
 
 export function SiteHeader() {
   return (
@@ -22,9 +23,9 @@ export function SiteHeader() {
 
         <div className="hidden items-center gap-7 text-sm font-black md:flex">
           {navLinks.map((link) => (
-            <a className="nav-link-plus" href={link.href} key={link.href}>
+            <a className={styles.navLinkPlus} href={link.href} key={link.href}>
               <span>{link.label}</span>
-              <span className="nav-plus" aria-hidden="true">
+              <span className={styles.navPlus} aria-hidden="true">
                 +
               </span>
             </a>
@@ -32,7 +33,7 @@ export function SiteHeader() {
         </div>
 
         <div className="flex items-center">
-          <a className="nav-cta" href={contact.whatsappUrl} target="_blank" rel="noreferrer">
+          <a className={styles.navCta} href={contact.whatsappUrl} target="_blank" rel="noreferrer">
             <svg
               className="h-5 w-5"
               viewBox="-2.4 -2.4 28.80 28.80"

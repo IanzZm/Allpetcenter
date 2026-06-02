@@ -1,18 +1,20 @@
 import Image from "next/image";
 import { teamMembers } from "@/data/site-content";
+import shared from "@/components/styles/shared.module.css";
+import styles from "./team-section.module.css";
 
 export function TeamSection() {
   return (
     <section id="equipe" className="bg-white py-20">
       <div className="mx-auto max-w-7xl px-5 text-center sm:px-8">
-        <p className="section-badge">Equipe</p>
+        <p className={shared.sectionBadge}>Equipe</p>
         <h2 className="mx-auto mt-4 max-w-2xl text-4xl font-black leading-tight sm:text-5xl">
           Conheca parte da nossa equipe
         </h2>
 
         <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          <article className="team-card lg:col-span-1">
-            <div className="team-photo is-wide">
+          <article className={`${styles.teamCard} lg:col-span-1`}>
+            <div className={`${styles.teamPhoto} ${styles.isWide}`}>
               <Image
                 className="object-cover object-top"
                 src="/fotos/equipe/equipe-allpet-limpa.png"
@@ -26,8 +28,8 @@ export function TeamSection() {
           </article>
 
           {teamMembers.map((person) => (
-            <article className="team-card" key={person.name}>
-              <div className="team-photo">
+            <article className={styles.teamCard} key={person.name}>
+              <div className={styles.teamPhoto}>
                 <Image
                   className="object-cover object-top"
                   src={person.image}

@@ -1,11 +1,13 @@
 import Image from "next/image";
 import { contact } from "@/data/site-content";
+import shared from "@/components/styles/shared.module.css";
+import styles from "./about-section.module.css";
 
 export function AboutSection() {
   return (
     <section className="bg-white py-20">
       <div className="mx-auto grid max-w-7xl gap-12 px-5 sm:px-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
-        <div className="about-photo">
+        <div className={styles.aboutPhoto}>
           <Image
             className="object-cover object-top"
             src="/fotos/servicos/cuidado-pet-limpa.png"
@@ -15,8 +17,8 @@ export function AboutSection() {
           />
         </div>
         <div>
-          <p className="section-badge">Sobre nos</p>
-          <h2 className="section-title">
+          <p className={shared.sectionBadge}>Sobre nos</p>
+          <h2 className={shared.sectionTitle}>
             Uma rotina de cuidado feita com carinho e estrutura.
           </h2>
           <p className="mt-5 max-w-2xl text-base leading-8 text-muted">
@@ -25,21 +27,21 @@ export function AboutSection() {
             vida de tutores em Parnamirim e regiao.
           </p>
           <div className="mt-7 grid gap-4 sm:grid-cols-2">
-            <div className="mission-card">
+            <div className={styles.missionCard}>
               <span>Nossa missao</span>
               <p>Cuidar com agilidade, acolhimento e orientacao clara.</p>
             </div>
-            <div className="mission-card">
+            <div className={styles.missionCard}>
               <span>Nosso cuidado</span>
               <p>Atendimento integrado da consulta a recuperacao.</p>
             </div>
           </div>
-          <div className="instagram-callout">
+          <div className={styles.instagramCallout}>
             <div>
               <span>Instagram</span>
               <p>Acompanhe a rotina, bastidores e novidades da All Pet.</p>
             </div>
-            <a className="instagram-link" href={contact.instagramUrl} target="_blank" rel="noreferrer">
+            <a className={styles.instagramLink} href={contact.instagramUrl} target="_blank" rel="noreferrer">
               <span className="relative block h-5 w-5 shrink-0">
                 <Image
                   className="object-contain"

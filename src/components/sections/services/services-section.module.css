@@ -1,0 +1,25 @@
+.sectionBrown {
+  position: relative;
+  background: linear-gradient(135deg, #9b4f24 0%, #bd713a 54%, #8b431f 100%);
+}
+
+.servicePhotoCard {
+  overflow: hidden;
+  border-radius: 0.9rem;
+  background: white;
+  padding: 0.65rem;
+  box-shadow: 0 20px 60px rgb(58 26 13 / 0.2);
+}
+
+.servicePhotoCard h3 {
+  margin: 1rem 0.6rem 0;
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.servicePhotoCard p {
+  margin: 0.45rem 0.6rem 0.6rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}

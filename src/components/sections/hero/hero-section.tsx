@@ -1,13 +1,15 @@
 import Image from "next/image";
 import { contact, heroTags } from "@/data/site-content";
+import shared from "@/components/styles/shared.module.css";
+import styles from "./hero-section.module.css";
 
 export function HeroSection() {
   return (
-    <section id="inicio" className="hero-section">
-      <div className="paw-soft absolute inset-0 opacity-25" />
+    <section id="inicio" className={styles.heroSection}>
+      <div className={`${shared.pawSoft} absolute inset-0 opacity-25`} />
       <div className="mx-auto grid min-h-[calc(100vh-69px)] max-w-7xl items-center gap-12 px-5 pb-28 pt-16 sm:px-8 lg:grid-cols-[1fr_0.92fr] lg:pb-32">
         <div className="relative z-10">
-          <p className="hero-pill">Clinica veterinaria 24 horas</p>
+          <p className={styles.heroPill}>Clinica veterinaria 24 horas</p>
           <h1 className="mt-6 max-w-3xl text-5xl font-black leading-[1.02] text-white sm:text-7xl">
             Saude e cuidado completo para o seu pet.
           </h1>
@@ -17,17 +19,17 @@ export function HeroSection() {
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <a className="hero-cta" href={contact.whatsappUrl} target="_blank" rel="noreferrer">
+            <a className={`${shared.button} ${styles.heroCta}`} href={contact.whatsappUrl} target="_blank" rel="noreferrer">
               Chamar no WhatsApp
             </a>
-            <a className="hero-ghost" href="#servicos">
+            <a className={`${shared.button} ${styles.heroGhost}`} href="#servicos">
               Ver servicos
             </a>
           </div>
 
           <div className="mt-8 flex flex-wrap gap-3">
             {heroTags.map((item) => (
-              <span className="hero-tag" key={item}>
+              <span className={styles.heroTag} key={item}>
                 {item}
               </span>
             ))}
@@ -35,9 +37,9 @@ export function HeroSection() {
         </div>
 
         <div className="relative z-10 lg:justify-self-end">
-          <div className="hero-photo-wrap">
-            <div className="hero-blob" />
-            <div className="hero-photo">
+          <div className={styles.heroPhotoWrap}>
+            <div className={styles.heroBlob} />
+            <div className={styles.heroPhoto}>
               <Image
                 className="object-cover object-top"
                 src="/fotos/servicos/dog-hero-ia.png"
@@ -47,7 +49,7 @@ export function HeroSection() {
                 sizes="(min-width: 1024px) 520px, 100vw"
               />
             </div>
-            <div className="hero-mini-card">
+            <div className={styles.heroMiniCard}>
               <div className="relative h-16 w-16 overflow-hidden rounded-full">
                 <Image
                   className="object-cover object-top"
@@ -65,7 +67,7 @@ export function HeroSection() {
           </div>
         </div>
       </div>
-      <div className="wave wave-white" />
+      <div className={`${styles.wave} ${styles.waveWhite}`} />
     </section>
   );
 }

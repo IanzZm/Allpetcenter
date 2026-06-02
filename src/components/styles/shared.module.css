@@ -1,0 +1,88 @@
+.sectionBadge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  background: var(--orange-soft);
+  color: var(--brown-dark);
+  padding: 0.42rem 0.9rem;
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.light {
+  background: #ffe4a9;
+}
+
+.sectionTitle {
+  margin-top: 1rem;
+  max-width: 42rem;
+  font-size: clamp(2.25rem, 4vw, 3.4rem);
+  font-weight: 900;
+  line-height: 1.08;
+}
+
+.button {
+  display: inline-flex;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 1rem 1.35rem;
+  font-size: 0.86rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.buttonDark {
+  background: var(--ink);
+  color: white;
+}
+
+.buttonLight {
+  border: 1px solid var(--border);
+  background: white;
+  color: var(--ink);
+}
+
+.orangeLink {
+  margin-top: 2rem;
+  background: var(--orange);
+  color: white;
+  box-shadow: var(--shadow-brand);
+}
+
+.pawSoft {
+  inset: -15%;
+  background: rgb(255 255 255 / 0.9);
+  mask-image: url("/dog-paw-svgrepo-com.svg");
+  mask-position: 22px 18px;
+  mask-repeat: repeat;
+  mask-size: 112px 112px;
+  transform-origin: center;
+  animation: paw-pulse 4.8s ease-in-out infinite;
+  -webkit-mask-image: url("/dog-paw-svgrepo-com.svg");
+  -webkit-mask-position: 22px 18px;
+  -webkit-mask-repeat: repeat;
+  -webkit-mask-size: 112px 112px;
+  will-change: opacity, transform;
+}
+
+@keyframes paw-pulse {
+  0%,
+  100% {
+    opacity: 0.12;
+    transform: scale(0.96);
+  }
+
+  50% {
+    opacity: 0.2;
+    transform: scale(1.04);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pawSoft {
+    animation: none;
+  }
+}
