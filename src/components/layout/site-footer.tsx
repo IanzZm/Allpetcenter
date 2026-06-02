@@ -9,7 +9,7 @@ export function SiteFooter() {
           <div className="relative h-16 w-40 overflow-hidden rounded-md">
             <Image
               className="object-contain"
-              src="/fotos/marca/logo-allpet.png"
+              src="/fotos/marca/logo-allpet-transparent.png"
               alt="Logo All Pet Center 24h"
               fill
               sizes="160px"

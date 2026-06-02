@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { contact } from "@/data/site-content";
 
 export function AboutSection() {
   return (
@@ -32,6 +33,24 @@ export function AboutSection() {
               <span>Nosso cuidado</span>
               <p>Atendimento integrado da consulta a recuperacao.</p>
             </div>
+          </div>
+          <div className="instagram-callout">
+            <div>
+              <span>Instagram</span>
+              <p>Acompanhe a rotina, bastidores e novidades da All Pet.</p>
+            </div>
+            <a className="instagram-link" href={contact.instagramUrl} target="_blank" rel="noreferrer">
+              <span className="relative block h-5 w-5 shrink-0">
+                <Image
+                  className="object-contain"
+                  src="/fotos/marca/instagram-orange.png"
+                  alt=""
+                  fill
+                  sizes="20px"
+                />
+              </span>
+              @allpetcenter_24h
+            </a>
           </div>
         </div>
       </div>

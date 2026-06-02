@@ -4,6 +4,7 @@ import { AboutSection } from "@/components/sections/about-section";
 import { FaqSection } from "@/components/sections/faq-section";
 import { HeroSection } from "@/components/sections/hero-section";
 import { LocationSection } from "@/components/sections/location-section";
+import { ReviewsSection } from "@/components/sections/reviews-section";
 import { ServicesSection } from "@/components/sections/services-section";
 import { TeamSection } from "@/components/sections/team-section";
 import { TrustSection } from "@/components/sections/trust-section";
@@ -18,6 +19,7 @@ export default function Home() {
       <ServicesSection />
       <TeamSection />
       <TrustSection />
+      <ReviewsSection />
       <VideoSection />
       <FaqSection />
       <LocationSection />
