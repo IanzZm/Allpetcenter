@@ -7,7 +7,7 @@ export function LocationSection() {
     <section id="localizacao" className="bg-cream py-20">
       <div className="mx-auto grid max-w-7xl gap-10 px-5 sm:px-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
         <div>
-          <p className={shared.sectionBadge}>Localizacao</p>
+          <p className={shared.sectionBadge}>Localização</p>
           <h2 className={shared.sectionTitle}>Estamos em Nova Parnamirim.</h2>
           <p className="mt-5 text-lg leading-8 text-muted">
             Av. Abel Cabral, 681 - 6A - Nova Parnamirim, Parnamirim - RN,

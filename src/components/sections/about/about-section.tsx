@@ -11,29 +11,29 @@ export function AboutSection() {
           <Image
             className="object-cover object-top"
             src="/fotos/servicos/cuidado-pet-limpa.png"
-            alt="Cuidado veterinario com filhote"
+            alt="Cuidado veterinário com filhote"
             fill
             sizes="(min-width: 1024px) 420px, 100vw"
           />
         </div>
         <div>
-          <p className={shared.sectionBadge}>Sobre nos</p>
+          <p className={shared.sectionBadge}>Sobre nós</p>
           <h2 className={shared.sectionTitle}>
             Uma rotina de cuidado feita com carinho e estrutura.
           </h2>
           <p className="mt-5 max-w-2xl text-base leading-8 text-muted">
-            A All Pet Center 24h une clinica veterinaria, centro cirurgico,
-            internamento, loja fisica, pet shop e banho e tosa para facilitar a
-            vida de tutores em Parnamirim e regiao.
+            A All Pet Center 24h une clínica veterinária, centro cirúrgico,
+            internamento, loja física, pet shop e banho e tosa para facilitar a
+            vida de tutores em Parnamirim e região.
           </p>
           <div className="mt-7 grid gap-4 sm:grid-cols-2">
             <div className={styles.missionCard}>
-              <span>Nossa missao</span>
-              <p>Cuidar com agilidade, acolhimento e orientacao clara.</p>
+              <span>Nossa missão</span>
+              <p>Cuidar com agilidade, acolhimento e orientação clara.</p>
             </div>
             <div className={styles.missionCard}>
               <span>Nosso cuidado</span>
-              <p>Atendimento integrado da consulta a recuperacao.</p>
+              <p>Atendimento integrado da consulta à recuperação.</p>
             </div>
           </div>
           <div className={styles.instagramCallout}>

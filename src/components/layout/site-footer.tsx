@@ -17,7 +17,7 @@ export function SiteFooter() {
             />
           </div>
           <p className="mt-3 max-w-sm text-sm text-white/62">
-            Clinica veterinaria, pet shop, banho e tosa em Parnamirim - RN.
+            Clínica veterinária, pet shop, banho e tosa em Parnamirim - RN.
           </p>
         </div>
         <div className="flex flex-col gap-2 text-sm font-semibold text-white/72 sm:flex-row sm:gap-5">

@@ -36,7 +36,7 @@ export function ReelPreview() {
         <Image
           className="object-cover object-top transition duration-500 group-hover:scale-105"
           src="/fotos/servicos/capa-reel-limpa.png"
-          alt="Video de cuidados veterinarios da All Pet Center 24h"
+          alt="Vídeo de cuidados veterinários da All Pet Center 24h"
           fill
           sizes="(min-width: 1024px) 440px, 100vw"
         />
@@ -52,7 +52,7 @@ export function ReelPreview() {
             Veja um atendimento real da All Pet Center
           </span>
           <span className="mt-3 block text-sm font-semibold leading-6 text-white/72">
-            Clique para assistir ao Reel no proprio site.
+            Clique para assistir ao Reel no próprio site.
           </span>
         </span>
       </button>
@@ -62,7 +62,7 @@ export function ReelPreview() {
           className="fixed inset-0 z-50 grid place-items-center bg-ink/86 px-4 py-8 backdrop-blur-sm"
           role="dialog"
           aria-modal="true"
-          aria-label="Video do Instagram"
+          aria-label="Vídeo do Instagram"
         >
           <div className="relative w-full max-w-[430px]">
             <button
@@ -92,7 +92,7 @@ export function ReelPreview() {
                 }}
               >
                 <a href={reelUrl} target="_blank" rel="noreferrer">
-                  Ver essa publicacao no Instagram
+                  Ver essa publicação no Instagram
                 </a>
               </blockquote>
             </div>

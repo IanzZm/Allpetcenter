@@ -7,7 +7,7 @@ export function ReviewsSection() {
     <section id="avaliacoes" className={styles.reviewsSection}>
       <div className="mx-auto max-w-7xl px-5 py-20 sm:px-8">
         <div className="mx-auto max-w-4xl text-center">
-          <p className={`${shared.sectionBadge} ${shared.light}`}>Avaliacoes</p>
+          <p className={`${shared.sectionBadge} ${shared.light}`}>Avaliações</p>
           <h2 className={`${shared.sectionTitle} ${styles.reviewsTitle} mx-auto`}>
             O que os tutores dizem sobre a All Pet.
           </h2>

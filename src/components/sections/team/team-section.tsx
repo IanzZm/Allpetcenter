@@ -9,7 +9,7 @@ export function TeamSection() {
       <div className="mx-auto max-w-7xl px-5 text-center sm:px-8">
         <p className={shared.sectionBadge}>Equipe</p>
         <h2 className="mx-auto mt-4 max-w-2xl text-4xl font-black leading-tight sm:text-5xl">
-          Conheca parte da nossa equipe
+          Conheça parte da nossa equipe
         </h2>
 
         <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -24,7 +24,7 @@ export function TeamSection() {
               />
             </div>
             <h3>Equipe All Pet</h3>
-            <p>Clinica, pet shop e suporte 24h</p>
+            <p>Clínica, pet shop e suporte 24h</p>
           </article>
 
           {teamMembers.map((person) => (

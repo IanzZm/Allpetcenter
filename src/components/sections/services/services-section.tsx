@@ -9,9 +9,9 @@ export function ServicesSection() {
       <div className={`${shared.pawSoft} absolute inset-0 opacity-20`} />
       <div className="relative mx-auto max-w-7xl px-5 py-20 sm:px-8">
         <div className="text-center">
-          <p className={`${shared.sectionBadge} ${shared.light}`}>Servicos</p>
+          <p className={`${shared.sectionBadge} ${shared.light}`}>Serviços</p>
           <h2 className="mx-auto mt-4 max-w-2xl text-4xl font-black leading-tight text-white sm:text-5xl">
-            Nossos servicos veterinarios
+            Nossos serviços veterinários
           </h2>
         </div>
 

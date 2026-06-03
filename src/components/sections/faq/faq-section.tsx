@@ -9,7 +9,7 @@ export function FaqSection() {
         <div className={styles.faqContact}>
           <p className="text-lg font-black">Precisa de ajuda agora?</p>
           <p className="mt-3 text-sm leading-6 text-muted">
-            Nossa equipe pode orientar o melhor proximo passo para o seu pet.
+            Nossa equipe pode orientar o melhor próximo passo para o seu pet.
           </p>
           <a href={contact.whatsappUrl} target="_blank" rel="noreferrer">
             {contact.phoneDisplay}
@@ -25,7 +25,7 @@ export function FaqSection() {
                 <summary>{question}</summary>
                 <p>
                   Sim. Chame a equipe no WhatsApp para confirmar a melhor
-                  orientacao conforme o caso do seu pet.
+                  orientação conforme o caso do seu pet.
                 </p>
               </details>
             ))}

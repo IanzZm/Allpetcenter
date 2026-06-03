@@ -9,7 +9,7 @@ export function TrustSection() {
       <div className={`${shared.pawSoft} absolute inset-0 opacity-45`} />
       <div className="relative mx-auto grid max-w-7xl gap-12 px-5 py-20 sm:px-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
         <div>
-          <p className={shared.sectionBadge}>Beneficios</p>
+          <p className={shared.sectionBadge}>Benefícios</p>
           <h2 className={shared.sectionTitle}>Por que tutores confiam na All Pet?</h2>
           <div className="mt-8 space-y-5">
             {trustItems.map((item) => (
@@ -29,7 +29,7 @@ export function TrustSection() {
             <Image
               className="object-cover object-top"
               src="/fotos/doutores/dr-erick-limpa.png"
-              alt="Atendimento veterinario com cachorro"
+              alt="Atendimento veterinário com cachorro"
               fill
               sizes="(min-width: 1024px) 520px, 100vw"
             />
@@ -38,7 +38,7 @@ export function TrustSection() {
             <Image
               className="object-cover object-top"
               src="/fotos/doutores/dra-larissa-limpa.png"
-              alt="Veterinaria com cachorro"
+              alt="Veterinária com cachorro"
               fill
               sizes="240px"
             />
